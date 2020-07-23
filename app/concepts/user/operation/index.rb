@@ -11,7 +11,7 @@ module User::Operation
     end
 
     def is_request_valid?(ctx, params: , **)
-      params[:is_valid]
+      params[:is_valid] == "true"
     end
 
     def set_error_msg(ctx, **)
